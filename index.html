@@ -8,6 +8,8 @@
   <script src="assets/scripts/script.js" defer></script>
   <link rel="stylesheet" href="/assets/styles/style.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </head>
 
@@ -16,11 +18,11 @@
     <h1 class="logo" id="logo">Emerson.dev</h1>
     <div class="nav" id="nav">
       <ul class="nav_links" id="nav_links">
-        <li><a class="menu__link" href="#home">Home</a></li>
-        <li><a class="menu__link" href="#">Sobre</a></li>
-        <li><a class="menu__link" href="#skills">Conhecimentos</a></li>
-        <li><a class="menu__link" href="#">Projetos</a></li>
-        <li><a class="menu__link" href="#">Contato</a></li>
+        <li><a class="link" href="#home">Home</a></li>
+        <li><a class="link" href="#about">Sobre</a></li>
+        <li><a class="link" href="#skills">Conhecimentos</a></li>
+        <li><a class="link" href="#projects">Projetos</a></li>
+        <li><a class="link" href="#contact">Contato</a></li>
       </ul>
     </div>
   </header>
@@ -44,7 +46,6 @@
 
   <section class="skills" id="skills">
 
-
     <h1>Habilidades</h1>
 
     <div class="cardContainer">
@@ -55,7 +56,6 @@
           <i class="devicon-css3-plain colored"></i>
         </div>
       </div>
-
 
       <div class="card card_html" id="card">
         <div class="content">
@@ -92,7 +92,46 @@
   <section class="about" id="about">
   </section>
   <section class="projects" id="projects"></section>
-  <section class="contact" id="contact"></section>
+
+  <section class="contact" id="contact">
+
+    <h1>Entre em contato</h1>
+
+    <div class="contact_container">
+      <div class="contact_div">
+        <div class="contact_logo">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <div class="contact_info">
+          <h3>Email</h3>
+          <span>emerson.dev21@gmail.com</span>
+        </div>
+      </div>
+      <div class="contact_div">
+        <div class="contact_logo">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </div>
+        <div class="contact_info">
+          <h3>Instagram</h3>
+          <span><a class="link"
+              href="https://www.instagram.com/emerson.dev21?igsh=YzAwZjE1ZTI0Zg==">emerson.dev21</a></span>
+        </div>
+      </div>
+      <div class="contact_div">
+        <div class="contact_logo">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </div>
+        <div class="contact_info">
+          <h3>Linkedln</h3>
+          <span><a class="link" href="https://www.linkedin.com/in/emerson-batista-935238260/">Emerson Batista</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://github.com/emersondev21">emersondev21</a>
+  </footer>
 </body>
 
 </html>
