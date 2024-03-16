@@ -6,17 +6,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emerson.dev</title>
   <script src="assets/scripts/script.js" defer></script>
-  <link rel="stylesheet" href="/assets/styles/style.css">
+  <!-- <link rel="stylesheet" href="/assets/styles/style.css"> -->
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <script src="assets/scripts/script.js" defer></script>
+  <link rel="shortcut icon" href="/assets/img/cool.png" type="image/x-icon">
 </head>
 
 <body>
   <header class="header" id="header">
-    <h1 class="logo" id="logo">Emerson.dev</h1>
-    <div class="nav" id="nav">
+    <h1 class="logo" id="logo" >Emerson.dev</h1>
+    <div class="nav nav_desktop" id="nav">
       <ul class="nav_links" id="nav_links">
         <li><a class="link" href="#home">Home</a></li>
         <li><a class="link" href="#about">Sobre</a></li>
@@ -25,7 +27,24 @@
         <li><a class="link" href="#contact">Contato</a></li>
       </ul>
     </div>
+
+    <input type="checkbox" id="checkbox" >
+    <label for="checkbox" class="toggle" onclick="activate_nav_mobile()">
+        <div class="bars" id="bar1"></div>
+        <div class="bars" id="bar2"></div>
+        <div class="bars" id="bar3"></div>
+    </label>
   </header>
+
+  <div class="nav nav_mobile" id="nav_mobile">
+    <ul class="nav_links" id="mobile_nav_links">
+      <li><a class="link" href="#home">Home</a></li>
+      <li><a class="link" href="#about">Sobre</a></li>
+      <li><a class="link" href="#skills">Conhecimentos</a></li>
+      <li><a class="link" href="#projects">Projetos</a></li>
+      <li><a class="link" href="#contact">Contato</a></li>
+    </ul>
+  </div>
 
   <section class="home" id="home">
     <div class="text_section" id="text_section">
