@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,19 @@
   <script src="assets/scripts/script.js" defer></script>
   <link rel="stylesheet" href="/assets/styles/style.css">
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+
 </head>
+
 <body>
   <header class="header" id="header">
     <h1 class="logo" id="logo">Emerson.dev</h1>
     <div class="nav" id="nav">
       <ul class="nav_links" id="nav_links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Conhecimentos</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Contato</a></li>
+        <li><a class="menu__link" href="#home">Home</a></li>
+        <li><a class="menu__link" href="#">Sobre</a></li>
+        <li><a class="menu__link" href="#skills">Conhecimentos</a></li>
+        <li><a class="menu__link" href="#">Projetos</a></li>
+        <li><a class="menu__link" href="#">Contato</a></li>
       </ul>
     </div>
   </header>
@@ -39,9 +41,58 @@
       <img src="assets/img/profile_Icon.png" alt="" srcset="">
     </div>
   </section>
-  <section class="about" id="about"></section>
-  <section class="skills" id="skills"></section>
+
+  <section class="skills" id="skills">
+
+
+    <h1>Habilidades</h1>
+
+    <div class="cardContainer">
+
+      <div class="card card_css" id="card">
+        <div class="content">
+          <span>CSS</span>
+          <i class="devicon-css3-plain colored"></i>
+        </div>
+      </div>
+
+
+      <div class="card card_html" id="card">
+        <div class="content">
+          <span>HTML</span>
+          <i class="devicon-html5-plain colored"></i>
+        </div>
+      </div>
+
+
+      <div class="card card_js" id="card">
+        <div class="content">
+          <span>Javascript</span>
+          <i class="devicon-javascript-plain colored"></i>
+        </div>
+      </div>
+
+
+      <div class="card card_python" id="card">
+        <div class="content">
+          <span>Python</span>
+
+          <i class="devicon-python-plain colored"></i>
+        </div>
+      </div>
+
+      <div class="card card_vuejs" id="card">
+        <div class="content">
+          <span>VueJS</span>
+          <i class="devicon-vuejs-plain colored"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about" id="about">
+  </section>
   <section class="projects" id="projects"></section>
   <section class="contact" id="contact"></section>
 </body>
+
 </html>
