@@ -221,7 +221,7 @@ img {
   margin: 1rem;
 }
 
-.skills {
+.skills, .projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -229,7 +229,7 @@ img {
   padding: 90px;
 }
 
-.skills h1 {
+.skills h1, .projects h1 {
   font-size: 50px;
   font-weight: 300;
   margin-bottom: 50px;
@@ -331,7 +331,6 @@ img {
   }
 }
 
-
 /* css card */
 
 .card_css::before {
@@ -360,6 +359,40 @@ img {
 
 .card_vuejs::before {
   background: #41b883;
+}
+
+/* Projects Sessions */
+
+.block {
+  position: absolute;
+  text-align: center;
+  width: 200%;
+  height: 30px;
+  background-color: #ffd845;
+  color: #171717;
+  transform: rotate(-45deg);
+}
+
+.alert {
+  color: #ff0000;
+  font-size: 300px;
+}
+
+.card_project_soon::before {
+  background: #ff0000;
+}
+
+.card:hover .alert {
+  animation: pulse 1s infinite alternate; /* Define a animação apenas quando o mouse estiver em cima */
+}
+
+@keyframes pulse {
+  from {
+    color: #660003;
+  }
+  to {
+    color: #ff0000;
+  }
 }
 
 .contact {
