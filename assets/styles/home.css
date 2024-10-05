@@ -1,0 +1,148 @@
+.home {
+  height: calc(100vh + 80px);
+  display: flex;
+  justify-content: space-around;
+  background-color: #121212;
+  color: var(--text-color);
+  overflow: hidden;
+}
+
+.home h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.home h1 {
+  font-size: 30px;
+}
+
+.home span {
+  font-weight: bold;
+  color: var(--span-color);
+}
+
+#blink {
+  animation: spanBlink 2s infinite;
+}
+
+.text_section {
+  width: 50%;
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_section {
+  position: relative;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_section img {
+  width: 80%;
+  position: relative;
+  animation: updown 4s infinite;
+}
+
+.image_section .langIcons {
+  width: 50px;
+  position: absolute;
+  animation: none;
+  /* z-index: 5; */
+}
+
+@keyframes updown {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 15px;
+  }
+  100% {
+    bottom: 0;
+}
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials i {
+  font-size: 30px;
+  margin: 1rem;
+}
+
+
+/* Animação icones em volta do pirata */
+.container {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 1s ease, opacity 0.5s ease;
+  opacity: 0;
+}
+
+/* Posições iniciais (todas no centro) */
+#div1, #div2, #div3, #div4, #div5, #div6 {
+  transform: translate(-50%, -50%);
+}
+
+/* Quando o container é ativado com hover */
+.container:hover #div1 {
+  transform: translate(-50%, -50%) rotate(0deg) translateX(230px);
+  opacity: 1;
+}
+
+.container:hover #div2 {
+  transform: translate(-50%, -50%) rotate(60deg) translateX(230px);
+  opacity: 1;
+}
+
+.container:hover #div3 {
+  transform: translate(-50%, -50%) rotate(120deg) translateX(230px);
+  opacity: 1;
+}
+
+.container:hover #div4 {
+  transform: translate(-50%, -50%) rotate(180deg) translateX(230px);
+  opacity: 1;
+}
+
+.container:hover #div5 {
+  transform: translate(-50%, -50%) rotate(240deg) translateX(230px);
+  opacity: 1;
+}
+
+.container:hover #div6 {
+  transform: translate(-50%, -50%) rotate(300deg) translateX(230px);
+  opacity: 1;
+}
+
+/* Animação de rotação contínua após o hover */
+.container:hover {
+  animation: rotate-circle 10s linear infinite;
+}
+
+@keyframes rotate-circle {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}

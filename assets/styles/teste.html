@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação Circular</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.rectangle {
+    width: 80px;
+    height: 40px;
+    background-color: #3498db;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 1s ease, opacity 0.5s ease;
+    opacity: 0;
+}
+
+/* Posições iniciais (todas no centro) */
+#div1, #div2, #div3, #div4, #div5, #div6 {
+    transform: translate(-50%, -50%);
+}
+
+/* Quando o container é ativado com hover */
+.container:hover #div1 {
+    transform: translate(-50%, -50%) rotate(0deg) translateX(100px) rotate(0deg);
+    opacity: 1;
+}
+
+.container:hover #div2 {
+    transform: translate(-50%, -50%) rotate(60deg) translateX(100px) rotate(-60deg);
+    opacity: 1;
+}
+
+.container:hover #div3 {
+    transform: translate(-50%, -50%) rotate(120deg) translateX(100px) rotate(-120deg);
+    opacity: 1;
+}
+
+.container:hover #div4 {
+    transform: translate(-50%, -50%) rotate(180deg) translateX(100px) rotate(-180deg);
+    opacity: 1;
+}
+
+.container:hover #div5 {
+    transform: translate(-50%, -50%) rotate(240deg) translateX(100px) rotate(-240deg);
+    opacity: 1;
+}
+
+.container:hover #div6 {
+    transform: translate(-50%, -50%) rotate(300deg) translateX(100px) rotate(-300deg);
+    opacity: 1;
+}
+
+/* Animação de rotação contínua após o hover */
+.container:hover {
+    animation: rotate-container 5s linear infinite;
+}
+
+@keyframes rotate-container {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+    </style>
+    <div class="container">
+        <div class="rectangle" id="div1"></div>
+        <div class="rectangle" id="div2"></div>
+        <div class="rectangle" id="div3"></div>
+        <div class="rectangle" id="div4"></div>
+        <div class="rectangle" id="div5"></div>
+        <div class="rectangle" id="div6"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
