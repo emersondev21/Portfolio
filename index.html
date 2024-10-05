@@ -5,8 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Emerson.dev</title>
-  <script src="assets/scripts/script.js" defer></script>
+  <script src="./assets/scripts/script.js" defer></script>
   <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/header.css">
+  <link rel="stylesheet" href="./assets/styles/home.css">
+  <link rel="stylesheet" href="./assets/styles/about.css">
+  <link rel="stylesheet" href="./assets/styles/skills.css">
+  <link rel="stylesheet" href="./assets/styles/projects.css">
+  <link rel="stylesheet" href="./assets/styles/contact.css">
+  <link rel="stylesheet" href="./assets/styles/footer.css">
   <!-- <link rel="stylesheet" href="style.css"> -->
   <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -17,12 +24,11 @@
 
 <body>
   <header class="header" id="header">
-    <h1 class="logo" id="logo">Emerson.dev</h1>
+    <h1 class="logo" id="logo"><span>></span>Emerson.dev<span id="blink">_</span></h1>
     <div class="nav nav_desktop" id="nav">
       <ul class="nav_links" id="nav_links">
         <li><a class="link" href="#home">Home</a></li>
         <li><a class="link" href="#about">Sobre</a></li>
-        <li><a class="link" href="#skills">Conhecimentos</a></li>
         <li><a class="link" href="#projects">Projetos</a></li>
         <li><a class="link" href="#contact">Contato</a></li>
       </ul>
@@ -40,7 +46,6 @@
     <ul class="nav_links" id="mobile_nav_links">
       <li><a class="link" href="#home">Home</a></li>
       <li><a class="link" href="#about">Sobre</a></li>
-      <li><a class="link" href="#skills">Conhecimentos</a></li>
       <li><a class="link" href="#projects">Projetos</a></li>
       <li><a class="link" href="#contact">Contato</a></li>
     </ul>
@@ -51,15 +56,82 @@
       <div class="text_box" id="text_box">
         <h2>Oi, eu sou</h2>
         <h1>Emerson Batista</h1>
-        <h2>e sou um <span>desenvolverdor frontend</span></h2>
+        <h2>e sou um <span>desenvolverdor frontend</span><span id="blink">_</span></h2>
         <div class="socials" id="socials">
-          <a href="https://github.com/emersondev21"><i class="devicon-github-original"></i></a>
-          <a href=""><i class="devicon-linkedin-plain"></i></a>
+          <a href="https://github.com/emersondev21" alt="github"><i class="devicon-github-original"></i></a>
+          <a href="https://www.linkedin.com/in/emerson-batista-937826218/" alt="linkedin"><i class="devicon-linkedin-plain"></i></a>
         </div>
       </div>
     </div>
     <div class="image_section" id="image_section">
-      <img src="assets/img/profile_Icon.png" alt="" srcset="">
+      <!-- <img src="assets/img/profile_Icon.png" alt="" srcset=""> -->
+      <img class="pirate" src="assets/img/bg2.png" alt="Pirata programando" srcset="">
+      <div class="container">
+        <div class="circle" id="div1">
+          <img src="./assets/img/lang-icons/css.svg" alt="icone css" srcset="">
+        </div>
+        <div class="circle" id="div2">
+          <img src="./assets/img/lang-icons/html5.svg" alt="icone html5" srcset="">
+        </div>
+        <div class="circle" id="div3">
+          <img src="./assets/img/lang-icons/javascript.svg" alt="icone javascript" srcset="">
+        </div>
+        <div class="circle" id="div4">
+          <img src="./assets/img/lang-icons/tailwindcss.svg" alt="icone tailwindcss" srcset="">
+        </div>
+        <div class="circle" id="div5">
+          <img src="./assets/img/lang-icons/python.svg" alt="icone python" srcset="">
+        </div>
+        <div class="circle" id="div6">
+          <img src="./assets/img/lang-icons/vue.svg" alt="icone vue" srcset="">
+        </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="aboutPicture" id="aboutPicture">
+      <div class="containerAbout noselect">
+        <div class="canvas">
+          <div class="tracker tr-1"></div>
+          <div class="tracker tr-2"></div>
+          <div class="tracker tr-3"></div>
+          <div class="tracker tr-4"></div>
+          <div class="tracker tr-5"></div>
+          <div class="tracker tr-6"></div>
+          <div class="tracker tr-7"></div>
+          <div class="tracker tr-8"></div>
+          <div class="tracker tr-9"></div>
+          <div class="tracker tr-10"></div>
+          <div class="tracker tr-11"></div>
+          <div class="tracker tr-12"></div>
+          <div class="tracker tr-13"></div>
+          <div class="tracker tr-14"></div>
+          <div class="tracker tr-15"></div>
+          <div class="tracker tr-16"></div>
+          <div class="tracker tr-17"></div>
+          <div class="tracker tr-18"></div>
+          <div class="tracker tr-19"></div>
+          <div class="tracker tr-20"></div>
+          <div class="tracker tr-21"></div>
+          <div class="tracker tr-22"></div>
+          <div class="tracker tr-23"></div>
+          <div class="tracker tr-24"></div>
+          <div class="tracker tr-25"></div>
+          <div id="card">
+            <!-- <img src="./assets/img/me.jpeg" alt="" srcset=""> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="aboutText" id="aboutText">
+      <h1>Sobre Mim</h1>
+      <!-- <p>Sou técnico em Análise e Desenvolvimento de sistemas, e atualmente, estou cursando Engenharia da Computação na UFRPE de Belo Jardim, PE. Estou constantemente atualizando meus conhecimentos e buscando novos desafios na área de tecnologia. Tenho paixão por aprender e aplicar esses conhecimentos para criar soluções inovadoras!</p> -->
+      <div class="text_area">
+        
+        <p id="typing-text"></p><span id="blink">_</span>
+      </div>
     </div>
   </section>
 
@@ -109,9 +181,6 @@
     </div>
   </section>
 
-  <section class="about" id="about">
-  </section>
-
   <section class="projects" id="projects">
 
     <h1>Projetos</h1>
@@ -152,7 +221,6 @@
       <a href="#personal_projects"></a>
     </div>
   </section>
-
 
   <section class="projects personal_projects" id="personal_projects">
 
@@ -285,7 +353,6 @@
     </div>
   </section>
 
-
   <section class="contact" id="contact">
 
     <h1>Entre em contato</h1>
@@ -325,7 +392,6 @@
   <footer>
     <a href="https://github.com/emersondev21">@emersondev21</a>
   </footer>
-
 
 </body>
 
