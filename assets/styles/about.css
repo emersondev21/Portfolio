@@ -9,6 +9,10 @@
   
 }
 
+#card img {
+  width: 100%;
+}
+
 .aboutPicture, .aboutText {
   width: 50%;
   display: flex;
@@ -68,7 +72,7 @@ body .aboutPicture #card {
   align-items: center;
   border-radius: 20px;
   transition: .2s;
-  background-image: url("/assets/img/about-transformed.jpeg");
+  /* background-image: url("/assets/img/about.png"); */
   background-size: cover;
   background-repeat: none;
 }
