@@ -3,7 +3,8 @@
   color: var(--text-color);
 }
 
-.skills, .projects {
+.skills,
+.projects {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,9 +12,10 @@
   padding: 90px;
 }
 
-.skills h1, .projects h1 {
-  font-size: 50px;
-  font-weight: 300;
+.skills h1,
+.projects h1 {
+  font-size: 2rem;
+  font-weight: bold;
   margin-bottom: 50px;
 }
 
@@ -165,19 +167,21 @@
 }
 
 .card:hover .alert {
-  animation: pulse 1s infinite alternate; /* Define a animação apenas quando o mouse estiver em cima */
+  animation: pulse 1s infinite alternate;
+  /* Define a animação apenas quando o mouse estiver em cima */
 }
 
 @keyframes pulse {
   from {
     color: #660003;
   }
+
   to {
     color: #ff0000;
   }
 }
 
-.project_preview span a{
+.project_preview span a {
   text-align: center;
   display: flex;
   justify-content: center;
@@ -194,12 +198,13 @@
   transition: all .5s;
 }
 
-.card_personal:hover .project_preview{
+.card_personal:hover .project_preview {
   top: 0;
   transition: all .5s;
 }
 
-.card_personal:hover .card_title, .card_personal:hover .card_logo{
+.card_personal:hover .card_title,
+.card_personal:hover .card_logo {
   display: none;
   transition: all .5s;
 }

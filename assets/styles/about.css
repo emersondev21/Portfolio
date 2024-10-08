@@ -2,7 +2,6 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   padding: 90px;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -353,4 +352,31 @@ body .aboutPicture #card {
   user-select: none;
   /* Non-prefixed version, currently
 									supported by Chrome, Edge, Opera and Firefox */
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about .tracker {
+    display: none;
+  }
+
+  .aboutText h1 {
+    width: 100%;
+    font-size: 2rem;
+  }
+
+  .about .aboutText {
+    text-align: center;
+    width: 80%;
+  }
+
+  /* .about #card {
+    margin-top: 50px;
+  } */
 }

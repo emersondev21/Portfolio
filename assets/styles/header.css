@@ -28,9 +28,11 @@ header #blink {
   0% {
     color: #003800;
   }
+
   50% {
     color: #00b400;
   }
+
   100% {
     color: #003800;
   }
@@ -44,8 +46,8 @@ ul {
   /* background-color: purple; */
 }
 
-a {
-  color: var(--text-color);
+header a {
+  color: var(--span-color);
   text-decoration: none;
 }
 
@@ -60,7 +62,7 @@ a {
   width: 0;
   height: 2px;
   border-radius: 2px;
-  background-color: #fff;
+  background-color: var(--span-color);
   position: absolute;
   bottom: -.25rem;
   left: 50%;
@@ -94,7 +96,7 @@ a {
 .bars {
   width: 100%;
   height: 4px;
-  background-color: rgb(176, 92, 255);
+  background-color: var(--span-color);
   border-radius: 4px;
 }
 
@@ -102,33 +104,34 @@ a {
   transition-duration: .8s;
 }
 
-#bar1,#bar3 {
+#bar1,
+#bar3 {
   width: 70%;
 }
 
-#checkbox:checked + .toggle .bars {
+#checkbox:checked+.toggle .bars {
   position: absolute;
   transition-duration: .5s;
 }
 
-#checkbox:checked + .toggle #bar2 {
+#checkbox:checked+.toggle #bar2 {
   transform: scaleX(0);
   transition-duration: .5s;
 }
 
-#checkbox:checked + .toggle #bar1 {
+#checkbox:checked+.toggle #bar1 {
   width: 100%;
   transform: rotate(45deg);
   transition-duration: .5s;
 }
 
-#checkbox:checked + .toggle #bar3 {
+#checkbox:checked+.toggle #bar3 {
   width: 100%;
   transform: rotate(-45deg);
   transition-duration: .5s;
 }
 
-#checkbox:checked + .toggle {
+#checkbox:checked+.toggle {
   transition-duration: .5s;
   transform: rotate(180deg);
 }
@@ -142,10 +145,10 @@ a {
   padding-top: 90px;
   display: none;
   z-index: 1;
-  background: rgba(255, 255, 255, 0.2);
-backdrop-filter: blur(5px);
--webkit-backdrop-filter: blur(5px);
-border: 1px solid rgba(255, 255, 255, 0.3);
+  background: #121212be;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .nav_mobile ul {
@@ -161,4 +164,16 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   display: flex;
   height: 100%;
   transition: all .2s;
+  position: fixed;
+}
+
+@media (max-width: 800px) {
+  .toggle {
+    display: flex;
+  }
+
+  .nav_mobile .nav_links li a {
+    color: var(--span-color);
+    font-weight: bolder;
+  }
 }
