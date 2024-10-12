@@ -43,11 +43,10 @@ ul {
   list-style: none;
   justify-content: space-around;
   gap: 1rem;
-  /* background-color: purple; */
 }
 
 header a {
-  color: var(--span-color);
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -55,6 +54,7 @@ header a {
   line-height: 2;
   position: relative;
   font-size: 20px;
+  font-weight: 500;
 }
 
 .link::before {
@@ -70,6 +70,15 @@ header a {
 }
 
 .link:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.link.active {
+  color: var(--span-color);
+}
+
+.link.active::before {
   width: 100%;
   left: 0;
 }

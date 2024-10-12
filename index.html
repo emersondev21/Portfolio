@@ -8,8 +8,8 @@
   <script src="./assets/scripts/script.js" defer></script>
   <link rel="stylesheet" href="./assets/styles/style.css">
   <link rel="stylesheet" href="./assets/styles/header.css">
-  <link rel="stylesheet" href="./assets/styles/about.css">
   <link rel="stylesheet" href="./assets/styles/home.css">
+  <link rel="stylesheet" href="./assets/styles/about.css">
   <link rel="stylesheet" href="./assets/styles/skills.css">
   <link rel="stylesheet" href="./assets/styles/projects.css">
   <link rel="stylesheet" href="./assets/styles/contact.css">
@@ -46,7 +46,7 @@
     </label>
   </header>
 
-  <div class="scrool"></div>
+  <!-- <div class="scrool"></div> -->
 
   <div class="nav nav_mobile" id="nav_mobile">
     <ul class="nav_links" id="mobile_nav_links">
@@ -104,6 +104,8 @@
   </section>
 
   <section class="about" id="about">
+    <div class="aboutContainer1">
+
     <div class="aboutPicture" id="aboutPicture">
       <div class="containerAbout noselect">
         <div class="canvas">
@@ -147,55 +149,61 @@
         <p id="typing-text"></p><span id="blink">_</span>
       </div>
     </div>
+
+  </div>
+  
+    <section class="skills" id="skills">
+  
+      <h1>Habilidades</h1>
+  
+      <div class="cardContainer">
+  
+        <div class="card card_css" id="card">
+          <div class="content">
+            <span>CSS</span>
+            <i class="devicon-css3-plain colored"></i>
+          </div>
+        </div>
+  
+        <div class="card card_html" id="card">
+          <div class="content">
+            <span>HTML</span>
+            <i class="devicon-html5-plain colored"></i>
+          </div>
+        </div>
+  
+  
+        <div class="card card_js" id="card">
+          <div class="content">
+            <span>Javascript</span>
+            <i class="devicon-javascript-plain colored"></i>
+          </div>
+        </div>
+  
+        <div class="card card_python" id="card">
+          <div class="content">
+            <span>Python</span>
+  
+            <i class="devicon-python-plain colored"></i>
+          </div>
+        </div>
+  
+        <div class="card card_vuejs" id="card">
+          <div class="content">
+            <span>VueJS</span>
+            <i class="devicon-vuejs-plain colored"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </section>
 
-  <section class="skills" id="skills">
-
-    <h1>Habilidades</h1>
-
-    <div class="cardContainer">
-
-      <div class="card card_css" id="card">
-        <div class="content">
-          <span>CSS</span>
-          <i class="devicon-css3-plain colored"></i>
-        </div>
-      </div>
-
-      <div class="card card_html" id="card">
-        <div class="content">
-          <span>HTML</span>
-          <i class="devicon-html5-plain colored"></i>
-        </div>
-      </div>
-
-
-      <div class="card card_js" id="card">
-        <div class="content">
-          <span>Javascript</span>
-          <i class="devicon-javascript-plain colored"></i>
-        </div>
-      </div>
-
-      <div class="card card_python" id="card">
-        <div class="content">
-          <span>Python</span>
-
-          <i class="devicon-python-plain colored"></i>
-        </div>
-      </div>
-
-      <div class="card card_vuejs" id="card">
-        <div class="content">
-          <span>VueJS</span>
-          <i class="devicon-vuejs-plain colored"></i>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <section class="projects" id="projects">
+    <div class="projectContainer1">
 
+    
     <h1>Projetos</h1>
 
     <div class="cardContainer">
@@ -227,12 +235,10 @@
           <h3 class="block">Em Breve</h3>
         </div>
       </div>
-
+    </div>
+    
     </div>
 
-    <div class="to_personal">
-      <a href="#personal_projects"></a>
-    </div>
   </section>
 
   <section class="projects personal_projects" id="personal_projects">

@@ -49,4 +49,33 @@ window.sr = ScrollReveal({ reset: true });
 sr.reveal('.about', { duration: 2000 });
 sr.reveal('.skills', { duration: 2000 });
 sr.reveal('.projects', { duration: 2000 });
+sr.reveal('.personal_projects', { duration: 2000 });
 sr.reveal('.contact', { duration: 2000 });
+
+// Seções e links
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('.nav_links .link');
+
+// Função para remover a classe 'active' de todos os links
+function removeActiveClasses() {
+  navLinks.forEach(link => link.classList.remove('active'));
+}
+
+// Função para adicionar a classe 'active' ao link visível
+function addActiveClass(link) {
+  link.classList.add('active');
+}
+
+// Usando Intersection Observer para detectar as seções visíveis
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const activeLink = document.querySelector(`.nav_links a[href="#${entry.target.id}"]`);
+      removeActiveClasses();
+      addActiveClass(activeLink);
+    }
+  });
+}, { threshold: 0.5 }); // A seção é considerada visível quando 50% dela está na tela
+
+// Observando cada seção
+sections.forEach(section => observer.observe(section));
