@@ -24,6 +24,26 @@
   transition: all .2s;
 }
 
+/* esses de baixo muda a aparência da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #201b2c00;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--span-color);
+  border-radius: 50px;
+  transition: all .2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #02dd02;
+  transition: all .2s;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg-color);

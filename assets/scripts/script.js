@@ -35,3 +35,18 @@ function typeWriter() {
 }
 
 window.onload = typeWriter;
+
+let area = document.querySelector('.about')
+
+area.addEventListener('contextmenu', (e) => {
+  e.preventDefault()
+})
+
+// scrollreveal
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.about', { duration: 2000 });
+sr.reveal('.skills', { duration: 2000 });
+sr.reveal('.projects', { duration: 2000 });
+sr.reveal('.contact', { duration: 2000 });
