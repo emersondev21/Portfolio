@@ -1,7 +1,7 @@
 .home {
   height: calc(100vh + 80px);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: var(--bg-color);
   color: var(--text-color);
   overflow: hidden;
@@ -31,7 +31,7 @@
   text-align: left;
 }
 
-.text_section {
+.home .text_section {
   width: 50%;
   text-transform: capitalize;
   display: flex;
@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-.image_section {
+.home .image_section {
   position: relative;
   width: 50%;
   display: flex;
@@ -49,7 +49,7 @@
 }
 
 .image_section img {
-  width: 80%;
+  width: 90%;
   position: relative;
   animation: updown 4s infinite;
 }
@@ -59,7 +59,7 @@
 }
 
 .image_section .langIcons {
-  width: 50px;
+  width: 10px;
   position: absolute;
   animation: none;
   /* z-index: 5; */
@@ -168,6 +168,7 @@
 @media (max-width: 800px) {
 
   .home {
+    height: 100dvh;
     flex-direction: column;
     align-items: center;
     padding: 80px 0;

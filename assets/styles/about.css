@@ -1,7 +1,7 @@
 .aboutContainer1 {
   background-color: var(--bg-color);
   color: var(--text-color);
-  padding: 90px;
+  padding: 0 90px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -356,6 +356,13 @@ body .aboutPicture #card {
 
 @media (max-width: 800px) {
   .about {
+    flex-direction: column-reverse;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about .aboutContainer1 {
     flex-direction: column-reverse;
     margin: 0;
     padding: 0;
